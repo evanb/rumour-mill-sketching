@@ -9,13 +9,14 @@ Rumours
   git-path: "git:/kjldkjls"
   ... any key/value will be captured ...
 
-  classes - service, team, business-process, 
+  types - service, team, business-process, 
 
 "Connection" rumour
 
-  class: "depends-on" | "part-of" | 
+  type: "depends-on" | "part-of" | "owned-by"
   source: "rumour-mill"
   target: "other-thing"
+  authority: "0.8"
 
   for a dependency:
    data-flow: "pull" | "push" | "push+pull"
