@@ -1,0 +1,25 @@
+{
+  "identities": [
+    {
+      "id": "github-api-monger",
+      "type": "service",
+      "authority": "0.7",
+      "github": "github.com:evanb/github-api-monger.git"
+    },
+    {
+      "id": "rumour-mill",
+      "type": "service",
+      "authority": "0.7",
+      "github": "github.com:supriyapjoshi/rumour-mill.git"
+    }
+  ],
+  "connections": [
+    {
+      "source": "rumour-mill",
+      "target": "github-api-monger",
+      "rel": "depends-on",
+      "authority": "0.4",
+      "data-flow": "pull"
+    }
+  ]
+}
